@@ -50,3 +50,7 @@ update boxes set value = value * 0.85 where value = (select value from boxes ord
 delete from Boxes where value < 150 ;
 --13
 delete from boxes using warehouses where warehouse = warehouses.code and warehouses.location = 'New York' returning * ;
+
+
+drop table lab4 ;
+
